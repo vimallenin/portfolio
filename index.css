@@ -25,6 +25,7 @@ header {
 .navbar {
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .navbar ul {
@@ -46,6 +47,15 @@ header {
 .navbar a:hover {
     background: #555555;
     border-radius: 5px;
+}
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    color: #f0f0f0;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 .welcome-section {
@@ -235,23 +245,13 @@ footer p {
     margin: 0;
 }
 
-
-@media only screen and (max-width: 768px) {
-    header {
-        padding: 0.5rem 1rem;
-    }
-
+@media (max-width: 768px) {
     .navbar {
         justify-content: space-between;
         padding: 0 1rem;
     }
 
     .burger {
-        background: none;
-        border: none;
-        color: #f0f0f0;
-        font-size: 2rem;
-        cursor: pointer;
         display: block;
     }
 
@@ -266,12 +266,12 @@ footer p {
         left: 0;
     }
 
-    .nav-links li {
-        margin: 1rem 0;
-    }
-
     .nav-links.show {
         display: flex;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
     }
 
     .welcome-section {
