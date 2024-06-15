@@ -235,16 +235,43 @@ footer p {
     margin: 0;
 }
 
-/* Existing CSS remains unchanged */
 
-/* Adjustments for smaller screens */
 @media only screen and (max-width: 768px) {
     header {
-        padding: 0.5rem 0;
+        padding: 0.5rem 1rem;
     }
 
-    .navbar li {
-        margin: 0 0.5rem;
+    .navbar {
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .burger {
+        background: none;
+        border: none;
+        color: #f0f0f0;
+        font-size: 2rem;
+        cursor: pointer;
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background: #333333;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .nav-links.show {
+        display: flex;
     }
 
     .welcome-section {
