@@ -24,8 +24,9 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: center;
-    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
 }
 
 .navbar ul {
@@ -246,11 +247,6 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    .navbar {
-        justify-content: space-between;
-        padding: 0 1rem;
-    }
-
     .burger {
         display: block;
     }
