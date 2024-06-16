@@ -235,9 +235,7 @@ footer p {
     margin: 0;
 }
 
-/* Existing CSS remains unchanged */
 
-/* Adjustments for smaller screens */
 @media only screen and (max-width: 768px) {
     header {
         padding: 0.5rem 0;
