@@ -10,7 +10,7 @@ body {
     line-height: 1.6;
     color: #f0f0f0;
     background: #121212;
-    padding-top: 60px; 
+    padding-top: 60px; /* Adjust this value based on header height */
 }
 
 header {
@@ -25,7 +25,7 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 1rem;
 }
