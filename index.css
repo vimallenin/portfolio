@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     color: #f0f0f0;
     background: #121212;
+    padding-top: 60px; /* Adjust this value based on header height */
 }
 
 header {
@@ -262,7 +263,7 @@ footer p {
         left: 0;
     }
 
-    .nav-links.show {
+    .nav-links.active {
         display: flex;
     }
 
@@ -303,17 +304,5 @@ footer p {
 
     .contact-section .section-header {
         font-size: 2rem;
-    }
-
-    .contact-links {
-        gap: 0.5rem;
-    }
-
-    .contact-link {
-        padding: 0.75rem 1.5rem;
-    }
-
-    .contact-link i {
-        font-size: 1.5rem;
     }
 }
