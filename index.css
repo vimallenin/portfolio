@@ -10,6 +10,7 @@ body {
     line-height: 1.6;
     color: #f0f0f0;
     background: #121212;
+    padding-top: 60px; /* Adjust this value based on header height */
 }
 
 header {
@@ -25,6 +26,8 @@ header {
 .navbar {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
 }
 
 .navbar ul {
@@ -46,6 +49,15 @@ header {
 .navbar a:hover {
     background: #555555;
     border-radius: 5px;
+}
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    color: #f0f0f0;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
 .welcome-section {
@@ -235,14 +247,28 @@ footer p {
     margin: 0;
 }
 
-
-@media only screen and (max-width: 768px) {
-    header {
-        padding: 0.5rem 0;
+@media (max-width: 768px) {
+    .burger {
+        display: block;
     }
 
-    .navbar li {
-        margin: 0 0.5rem;
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background: #333333;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
     }
 
     .welcome-section {
