@@ -7,8 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Close the menu when a link is clicked
-    navLinks.addEventListener('click', () => {
-        navLinks.classList.remove('show');
+    navLinks.addEventListener('click', (event) => {
+        if(event.target.tagName === 'A') {
+            navLinks.classList.remove('show');
+        }
     });
 });
-
