@@ -254,6 +254,9 @@ footer p {
 
     .nav-links {
         display: none;
+        position:absolute;
+        top:100%;
+        right:-100%
     }
 
     .nav-links.active {
