@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelector('.nav-links');
 
     burger.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
+        navLinks.classList.toggle('active');
     });
 
     // Close the menu when a link is clicked
     navLinks.addEventListener('click', (event) => {
-        if(event.target.tagName === 'A') {
-            navLinks.classList.remove('show');
+        if (event.target.tagName === 'A') {
+            navLinks.classList.remove('active');
         }
     });
 });
