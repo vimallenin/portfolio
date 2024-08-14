@@ -167,6 +167,10 @@ header {
     gap: 2rem;
 }
 
+.project a{
+    text-decoration:none
+}
+
 .project {
     background: #333333;
     border: 1px solid #444444;
